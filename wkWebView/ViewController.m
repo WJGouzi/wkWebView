@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <WebKit/WebKit.h>
 
+// 这是V2
+
 @interface ViewController ()<WKNavigationDelegate, UIGestureRecognizerDelegate,WKUIDelegate, UINavigationControllerDelegate>
 
 @end
@@ -22,7 +24,7 @@
     self.navigationController.interactivePopGestureRecognizer.delegate = self;
 }
 
-
+// 状态栏设置
 - (void)statusBarSettings {
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 20)];
     view.backgroundColor = [UIColor colorWithRed:255 / 255.0 green:170 / 255.0 blue:251 / 255.0 alpha:1.0];

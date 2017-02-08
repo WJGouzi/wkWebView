@@ -10,6 +10,8 @@
 #import "ViewController.h"
 #import "wjTestViewController.h"
 
+// 这是V1
+
 @interface wjVC ()
 
 @end
@@ -41,15 +43,15 @@
 
 - (void)nextView {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTitle:@"点击" forState:UIControlStateNormal];
+    [btn setTitle:@"点击进入隐藏导航栏" forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    btn.frame = CGRectMake(150, 250, 50, 30);
+    btn.frame = CGRectMake(50, 250, 250, 30);
     [self.view addSubview:btn];
     
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn1 setTitle:@"点击1" forState:UIControlStateNormal];
+    [btn1 setTitle:@"点击进入没有隐藏导航栏" forState:UIControlStateNormal];
     [btn1 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    btn1.frame = CGRectMake(150, 350, 50, 30);
+    btn1.frame = CGRectMake(50, 350, 250, 30);
     [self.view addSubview:btn1];
     
     [btn addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
